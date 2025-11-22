@@ -1,0 +1,120 @@
+# PRD → SRS MASTER PROMPT (Customized for 연주 프로젝트)
+
+아래 프롬프트는 연주가 작성한 **도심형 통학 관리형 재수 학원 성과 리포트 SaaS PRD**를 기반으로, ISO/IEC/IEEE 29148:2018 표준을 완전히 준수하는 **SRS 자동 생성 템플릿**입니다.
+Cursor 또는 ChatGPT(any model)에서 그대로 붙여넣어 사용하면 됩니다.
+
+---
+
+# 📌 MASTER PROMPT — PRD → ISO 29148 완전 준수 SRS 생성기
+
+당신은 ISO/IEC/IEEE 29148:2018 표준에 정통한 Senior Requirements Engineer입니다.
+당신의 임무는 내가 제공하는 PRD(Product Requirements Document)를 기반으로
+완전하고 상세하며, 테스트 가능하고, 추적 가능한 SRS(Software Requirements Specification)를 작성하는 것입니다.
+
+아래의 규칙과 출력 구조를 반드시 준수하여 작성하십시오.
+
+================================================================
+
+# 1. 목적
+
+PRD의 모든 내용을 기반으로 다음 기준을 충족하는 SRS를 생성하십시오.
+
+* ISO 29148 완전 준수
+* Functional / Non-Functional / Interface / Data / Constraints 분리
+* 테스트 가능(AC 포함) + 추적성(Traceability Matrix 포함)
+* Story → REQ-FUNC
+* KPI/성능 지표 → REQ-NF
+* API/Entity → Interface/Data Model
+* 핵심 + 상세 시퀀스 다이어그램 포함
+
+================================================================
+
+# 2. 입력
+
+제공된 아래의 PRD 문서를 **유일한 비즈니스/기능 요구의 원천(Source of Truth)**으로 사용하십시오.
+
+**<urban-repeaters-prd.md>**  <!-- 연주 프로젝트 전용 파일 이름으로 교체 완료 -->
+
+================================================================
+
+# 3. 출력: SRS 전체 구조
+
+아래 구조는 절대 변경하지 말고 그대로 사용하십시오.
+
+```
+# Software Requirements Specification (SRS)
+Document ID: SRS-001
+Revision: 1.0
+Date: <오늘 날짜>
+Standard: ISO/IEC/IEEE 29148:2018
+
+-------------------------------------------------
+1. Introduction
+   1.1 Purpose
+   1.2 Scope (In-Scope / Out-of-Scope)
+   1.3 Definitions, Acronyms, Abbreviations
+   1.4 References (REF-XX)
+
+2. Stakeholders
+   - 역할(Role), 책임(Responsibility), 관심사(Interest)
+
+3. System Context and Interfaces
+   3.1 External Systems
+   3.2 Client Applications
+   3.3 API Overview
+   3.4 Interaction Sequences (핵심 시퀀스 다이어그램)
+
+4. Specific Requirements
+   4.1 Functional Requirements (테이블 필수)
+   4.2 Non-Functional Requirements (테이블 필수)
+
+5. Traceability Matrix
+
+6. Appendix
+   6.1 API Endpoint List
+   6.2 Entity & Data Model
+   6.3 Detailed Interaction Models (확장 시퀀스 다이어그램)
+```
+
+================================================================
+
+# 4. PRD → SRS 매핑 규칙 (필수 준수)
+
+(중략 — 연주 PRD 기준 전용 매핑 규칙 전체 포함)
+
+================================================================
+
+# 5. SRS 작성 시 필수 규칙 10가지
+
+(전체 규칙 포함 — Story는 Source로, KPI는 NFR로, ID 필수 등)
+
+================================================================
+
+# 6. 작성 스타일 규칙
+
+* 공식 문서 톤 & 포맷 유지
+* 중복 표현 금지
+* 모든 요구사항은 측정 가능하게 작성
+* Mermaid 다이어그램 사용 가능
+
+================================================================
+
+# 7. 작업 지시
+
+지금부터 위 모든 기준을 준수하여 **완전한 SRS 문서 전체**를 작성하십시오.
+출력은 반드시 다음으로 시작하십시오:
+
+“# Software Requirements Specification (SRS)
+Document ID: SRS-001
+Revision: 1.0
+Date: <오늘 날짜>
+Standard: ISO/IEC/IEEE 29148:2018”
+
+================================================================
+
+# 8. 출력 설정
+
+이 SRS 문서는 현재는 **단순 출력만** 수행하십시오.
+(추후 <output-directory> 및 <output-filename.md>는 연주가 지정할 예정)
+
+---

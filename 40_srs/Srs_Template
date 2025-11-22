@@ -1,0 +1,115 @@
+# Software Requirements Specification (SRS)
+
+Document ID: SRS-XXX
+Revision: 0.1 (Draft)
+Date: YYYY-MM-DD
+Standard: ISO/IEC/IEEE 29148:2018
+
+---
+
+## 1. Introduction
+
+### 1.1 Purpose
+
+(작성 예정)
+
+### 1.2 Scope
+
+**In Scope:**
+
+* (작성 예정)
+
+**Out of Scope:**
+
+* (작성 예정)
+
+### 1.3 Definitions, Acronyms, Abbreviations
+
+(작성 예정)
+
+### 1.4 References
+
+* REF-01:
+* REF-02:
+
+---
+
+## 2. Stakeholders
+
+| Role | Responsibility | Interest |
+| ---- | -------------- | -------- |
+| (작성) | (작성)           | (작성)     |
+
+---
+
+## 3. System Context and Interfaces
+
+### 3.1 External Systems
+
+* (작성 예정)
+
+### 3.2 Client Applications
+
+* (작성 예정)
+
+### 3.3 API Overview
+
+* (추후 Appendix 6.1 상세 표와 연결)
+
+### 3.4 Interaction Sequences
+
+*(여기에 핵심 시퀀스 다이어그램 들어갈 자리)*
+
+```mermaid
+%% 시퀀스 다이어그램 자리
+sequenceDiagram
+    participant A
+    participant B
+    A->>B: Example
+```
+
+---
+
+## 4. Specific Requirements
+
+### 4.1 Functional Requirements
+
+| ID           | Title | Description | Source | Priority | Acceptance Criteria | Verification | Status   |
+| ------------ | ----- | ----------- | ------ | -------- | ------------------- | ------------ | -------- |
+| REQ-FUNC-001 |       |             |        |          |                     |              | Proposed |
+
+### 4.2 Non-Functional Requirements
+
+| ID         | Category    | Description (Measurable) | Acceptance Criteria | Verification |
+| ---------- | ----------- | ------------------------ | ------------------- | ------------ |
+| REQ-NF-001 | Performance |                          |                     |              |
+
+---
+
+## 5. Traceability Matrix
+
+| Story/Feature | Requirement ID | Test Case ID |
+| ------------- | -------------- | ------------ |
+|               |                |              |
+
+---
+
+## 6. Appendix
+
+### 6.1 API Endpoint List
+
+(여기에 API 표 넣을 예정)
+
+### 6.2 Entity & Data Model
+
+(엔터티 구조, 필드 타입 표 작성 예정)
+
+### 6.3 Detailed Interaction Models (Sequence Diagrams)
+
+```mermaid
+%% 상세 시퀀스 다이어그램 자리
+sequenceDiagram
+    participant X
+    participant Y
+    X->>Y: Example Detail
+```
